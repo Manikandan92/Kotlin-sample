@@ -10,6 +10,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var btnListView: Button
     lateinit var btnRecyclerView: Button
     lateinit var btnNavigationDrawer: Button
+    lateinit var btnTabLayout: Button
     lateinit var toolBar: Toolbar
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         btnListView = findViewById<Button>(R.id.btn_list_view) as Button
         btnRecyclerView = findViewById<Button>(R.id.btn_recycler_view) as Button
         btnNavigationDrawer = findViewById<Button>(R.id.btn_navigation) as Button
+        btnTabLayout = findViewById<Button>(R.id.btn_tab_layout) as Button
 
         toolBar.setTitle("Sample")
 
@@ -33,6 +35,11 @@ class MainActivity : AppCompatActivity() {
 
         btnNavigationDrawer.setOnClickListener {
             val intent = Intent(this, NavigationDrawerActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnTabLayout.setOnClickListener {
+            val intent = Intent(this, TabLayoutActivity::class.java)
             startActivity(intent)
         }
     }
