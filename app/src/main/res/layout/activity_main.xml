@@ -76,6 +76,18 @@
                     android:textColor="?android:attr/colorBackground"
                     android:typeface="serif"/>
 
+                <Button
+                    android:id="@+id/btn_bottom_sheet_layout"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_tab_layout"
+                    android:layout_marginTop="16dp"
+                    android:background="?attr/actionModeSplitBackground"
+                    android:text="Bottom sheet"
+                    android:textColor="?android:attr/colorBackground"
+                    android:typeface="serif"/>
+
             </RelativeLayout>
 
         </LinearLayout>
