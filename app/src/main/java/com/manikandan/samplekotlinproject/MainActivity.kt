@@ -11,6 +11,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var btnRecyclerView: Button
     lateinit var btnNavigationDrawer: Button
     lateinit var btnTabLayout: Button
+    lateinit var btnBottomSheetLayout: Button
     lateinit var toolBar: Toolbar
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         btnRecyclerView = findViewById<Button>(R.id.btn_recycler_view) as Button
         btnNavigationDrawer = findViewById<Button>(R.id.btn_navigation) as Button
         btnTabLayout = findViewById<Button>(R.id.btn_tab_layout) as Button
+        btnBottomSheetLayout = findViewById<Button>(R.id.btn_bottom_sheet_layout) as Button
 
         toolBar.setTitle("Sample")
 
@@ -40,6 +42,11 @@ class MainActivity : AppCompatActivity() {
 
         btnTabLayout.setOnClickListener {
             val intent = Intent(this, TabLayoutActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnBottomSheetLayout.setOnClickListener {
+            val intent = Intent(this, BottomSheetActivity::class.java)
             startActivity(intent)
         }
     }
