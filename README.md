@@ -31,3 +31,6 @@ We will build an Android App that uses ListView to show list of items:
 
 ![alt text](https://github.com/Manikandan92/Kotlin-sample/blob/master/assets/8.png "bottom sheet layout")
 
+6) Android deafult Alert dialog and anko library using Alert dialog
+
+![alt text](https://github.com/Manikandan92/Kotlin-sample/blob/master/assets/device-2018-03-21-103617.png "alert dialog")
