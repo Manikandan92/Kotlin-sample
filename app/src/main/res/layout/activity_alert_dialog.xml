@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/simpleAlert"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_list_view"
+                android:layout_marginTop="16dp"
+                android:background="?attr/actionModeSplitBackground"
+                android:text="@string/simple_alert"
+                android:textColor="?android:attr/colorBackground"
+                android:typeface="serif"/>
+
+            <Button
+                android:id="@+id/alertTwoButton"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_list_view"
+                android:layout_marginTop="16dp"
+                android:background="?attr/actionModeSplitBackground"
+                android:text="@string/alert_with_postive_and_nagative_button"
+                android:textColor="?android:attr/colorBackground"
+                android:typeface="serif"/>
+
+            <Button
+                android:id="@+id/alertThreeButton"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_list_view"
+                android:layout_marginTop="16dp"
+                android:background="?attr/actionModeSplitBackground"
+                android:text="@string/alert_with_three_button"
+                android:textColor="?android:attr/colorBackground"
+                android:typeface="serif"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="@string/using_anko_library_example"/>
+
+            <Button
+                android:id="@+id/ankoSimpleAlert"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_list_view"
+                android:layout_marginTop="16dp"
+                android:background="?attr/actionModeSplitBackground"
+                android:text="@string/simple_alert"
+                android:textColor="?android:attr/colorBackground"
+                android:typeface="serif"/>
+
+            <Button
+                android:id="@+id/ankoAlertTwoButton"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_list_view"
+                android:layout_marginTop="16dp"
+                android:background="?attr/actionModeSplitBackground"
+                android:text="@string/alert_with_postive_and_nagative_button"
+                android:textColor="?android:attr/colorBackground"
+                android:typeface="serif"/>
+
+            <Button
+                android:id="@+id/ankoAlertThreeButton"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_list_view"
+                android:layout_marginTop="16dp"
+                android:background="?attr/actionModeSplitBackground"
+                android:text="@string/alert_with_three_button"
+                android:textColor="?android:attr/colorBackground"
+                android:typeface="serif"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

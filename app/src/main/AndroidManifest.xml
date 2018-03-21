@@ -21,6 +21,7 @@
         <activity android:name="com.manikandan.samplekotlinproject.NavigationDrawerActivity"/>
         <activity android:name="com.manikandan.samplekotlinproject.TabLayoutActivity"/>
         <activity android:name="com.manikandan.samplekotlinproject.BottomSheetActivity"/>
+        <activity android:name="com.manikandan.samplekotlinproject.AlertDialogActivity"/>
     </application>
 
 </manifest>
