@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.support.v7.app.AlertDialog
 import android.support.v7.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_alert_dialog.*
-import org.jetbrains.anko.alert
+import org.jetbrains.anko.*
 
 /**
  * Created by manikandan on 21/03/18.
@@ -40,6 +40,28 @@ class AlertDialogActivity : AppCompatActivity() {
         ankoAlertThreeButton.setOnClickListener {
             ankoShowAlertWithThreeButton()
         }
+
+        // Custom alert dialogs using Anko lib
+        ankoCustomAlertButton.setOnClickListener {
+            ankoCustomAlertDialog()
+        }
+    }
+
+    private fun ankoCustomAlertDialog() {
+        alert("Custom alert dialog messages", "Alert dialog") {
+            positiveButton("POSITIVE") {
+
+            }
+            customView {
+                verticalLayout {
+                    textView("Sample textview")
+                    button("Sample button")
+                    editText("").setHint("Sample edit text")
+                    padding = dip(16)
+                }
+            }
+
+        }.show()
     }
 
     // ***** Anko Library Example code here ****** //
