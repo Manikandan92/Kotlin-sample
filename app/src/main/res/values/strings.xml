@@ -6,4 +6,5 @@
     <string name="alert_with_postive_and_nagative_button">Alert with postive and nagative Button</string>
     <string name="alert_with_three_button">Alert with three Button</string>
     <string name="using_anko_library_example">Using Anko Library Example</string>
+    <string name="custom_alert_dialogs">Custom alert dialogs</string>
 </resources>
