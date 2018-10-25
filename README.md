@@ -1,5 +1,10 @@
 # Kotlin-sample
-Android kotlin sample project as done and given below 1) Listview 2) Recycler view 3) Navigation drawer 4) Tab layout 5) Bottom sheet view
+This sample project demonstrates the implementation of the below views in Kotlin.
+1) Listview 
+2) Recycler view 
+3) Navigation drawer 
+4) Tab layout 
+5) Bottom sheet view
 
 
 Android kotlin sample.
